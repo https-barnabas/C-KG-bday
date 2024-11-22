@@ -1,0 +1,95 @@
+/* Login Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 200% 200%;
+    animation: gradientBG 8s ease infinite;
+    margin: 0;
+    color: #FFF;
+  }
+  
+  /* Animation for Background Gradient */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Login Form Container */
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Logo and Heading */
+  .login-container img {
+    width: 80px;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+  }
+  
+  .login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Animation for Logo */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+  }
+  
+  /* Input Fields */
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .login-container input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .login-container input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px #4e0eff;
+  }
+  
+  /* Submit Button */
+  .login-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4e0eff;
+    color: #FFF;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #997af0;
+    box-shadow: 0 0 15px #997af0;
+  }
+  
